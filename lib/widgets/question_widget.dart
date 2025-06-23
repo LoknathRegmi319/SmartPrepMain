@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../constants.dart';   // it contains our colors.
+// it contains our colors.
 class QuestionWidget extends StatelessWidget {
   const QuestionWidget(
     {super.key, 

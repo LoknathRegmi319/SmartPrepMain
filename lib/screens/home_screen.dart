@@ -12,7 +12,7 @@ import '../widgets/result_box.dart';
 // I'm taking the Stateful widget because it's going to be out parent widget and all the 
 //function and variabls will be in this widget so we will need to change starte of our widget.
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({Key? key}) : super(key: key);
+  const HomeScreen({super.key});
 
   @override
   _HomeScreenState createState() => _HomeScreenState();
@@ -22,22 +22,153 @@ class _HomeScreenState extends State<HomeScreen>  {
   final List<Question> _questions =[
     Question(
       id: '10',
-      title: ' What happens when you complete a quiz in SmartPrep ?',
+      title: ' What does HTML stand for?',
       options: {
-        'You get a reward only' :false,
-        'Your progress is saved' :true, 
-         'You lose your score' :false, 
-         'The app restarts' :false},
+        ' Hyperlinks and Text Markup Language' :false,
+        'HyperText Markup Language' :true, 
+         'Home Tool Markup Language' :false, 
+         'HyperText Machine Language' :false},
       ),
       Question(
       id: '11',
-      title: 'Why is SmartPrep better than reading books only ?',
+      title: 'Which HTML tag is used to create a hyperlink?',
       options: {
-        'It is faster and gives feedback' :true,
-      'It has TV shows' :false, 
-      'It skips hard topics' :false, 
-      'It works offline only' :false},
-      )
+        ' <a>' :true,
+      ' <link>' :false, 
+      '<href>' :false, 
+      '<url>' :false},
+      ),
+      Question(
+        id: '12',
+        title: 'Which tag is used to display a picture in HTML?',
+        options: {
+          '<img>': true,
+          '<picture>': false,
+          '<photo>': false,
+          '<image>': false,
+        },
+      ),
+      Question(
+        id: '13',
+        title: 'Which HTML attribute is used to define inline styles?',
+        options: {
+          'style': true,
+          'class': false,
+          'id': false,
+          'css': false,
+        },
+      ),
+      Question(
+        id: '14',
+        title: 'Which HTML element is used to define the document type?',
+        options: {
+        
+          '<html>': false,
+          '<head>': false,
+          '<doctype>': true,
+          '<body>': false,
+        },
+      ),
+      Question(
+        id: '15',
+        title: 'Which HTML element is used to define a table row?',
+        options: {
+          '<tr>': true,
+          '<td>': false,
+          '<th>': false,
+          '<table>': false,
+        },
+      ),
+      Question(
+        id: '16',
+        title: 'Which HTML element is used to define a table header?',
+        options: {
+          '<th>': true,
+          '<tr>': false,
+          '<td>': false,
+          '<table>': false,
+        },
+      ),
+      Question(
+        id: '17', 
+        title: 'Which CSS property is used to change the text color of an element?',
+         options:{
+          'color': true,
+          'background-color': false,
+          'font-size': false,
+          'text-decoration': false,
+         } 
+      ),
+      Question(
+        id: '18',
+        title: 'Which CSS property is used to change the font size of an element?',
+         options:{
+          'font-size': true,
+          'font-family': false,
+          'text-align': false,
+          'line-height': false,
+         }
+      ),
+      Question(
+        id: '19',
+        title: 'Which CSS property is used to change the background color of an element?',
+         options:{
+          'background-color': true,
+          'color': false,
+          'font-size': false,
+          'text-decoration': false,
+         }
+      ),
+      Question(
+        id: '20',
+        title: 'Which CSS property is used to change the font family of an element?',
+         options:{
+          'font-family': true,
+          'font-size': false,
+          'text-align': false,
+          'line-height': false,
+         }
+      ),
+      Question(
+        id: '21',
+        title: 'Which CSS property is used to change the text alignment of an element?',
+         options:{
+          'text-align': true,
+          'text-decoration': false,
+          'font-size': false,
+          'line-height': false,
+         }
+      ),
+      Question(
+        id: '22',
+        title: 'Which CSS property is used to change the line height of an element?',
+         options:{
+          'line-height': true,
+          'font-size': false,
+          'text-align': false,
+          'text-decoration': false,
+         }
+      ),
+      Question(
+        id: '23',
+        title: 'Which CSS property is used to change the font weight of an element?',
+         options:{
+          'font-weight': true,
+          'font-size': false,
+          'text-align': false,
+          'line-height': false,
+         }
+      ),
+      Question(
+        id: '24',
+        title: 'Which CSS property is used to change the text decoration of an element?',
+         options:{
+          'text-decoration': true,
+          'font-size': false,
+          'text-align': false,
+          'line-height': false,
+         }
+      ),
   ];
 
 // create an index to loop through _questions
