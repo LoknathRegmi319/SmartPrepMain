@@ -1,7 +1,7 @@
 // import the material package
 
 import 'package:flutter/material.dart';
-import 'package:quiz_app/widgets/option_card.dart';
+import 'package:SmartPrep/widgets/option_card.dart';
 import '../constants.dart';
 import '../models/question_model.dart';  //our question model
 import '../widgets/question_widget.dart';  //the question widget

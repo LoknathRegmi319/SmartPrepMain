@@ -1,6 +1,6 @@
 // import the material package
 import 'package:flutter/material.dart';
-import 'package:quiz_app/models/question_model.dart';
+import 'package:SmartPrep/models/question_model.dart';
 import './screens/home_screen.dart';  //the file we just created.
 import './models/db_connect.dart';
 // run the main method
